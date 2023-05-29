@@ -19,12 +19,12 @@
             <Image url="@../../../../../../../../../Users/ali%20gaber/Desktop/ferryyy.jpg" />
          </image>
       </ImageView>
-      <Text fill="#fcfcfc" layoutX="698.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ferry Booking Form" textAlignment="CENTER" wrappingWidth="484.13671875">
+      <Text fill="#fcfcfc" layoutX="289.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ferry Booking Form" textAlignment="CENTER" wrappingWidth="484.13671875">
          <font>
             <Font name="System Bold" size="48.0" />
          </font>
       </Text>
-      <AnchorPane layoutX="650.0" layoutY="96.0" onMouseClicked="#Startt" prefHeight="952.0" prefWidth="580.0" style="-fx-background-color: Black;">
+      <AnchorPane layoutX="240.0" layoutY="90.0" onMouseClicked="#Startt" prefHeight="952.0" prefWidth="580.0" style="-fx-background-color: Black;">
          <children>
             <HBox alignment="CENTER" layoutY="1.0" prefHeight="64.0" prefWidth="583.0" style="-fx-background-color: #03A9F4;">
                <children>
@@ -79,6 +79,44 @@
             </Text>
             <CheckBox fx:id="checkbox" layoutX="203.0" layoutY="679.0" mnemonicParsing="false" />
             <TextField fx:id="stops" layoutX="203.0" layoutY="432.0" prefHeight="34.0" prefWidth="355.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="confirm" layoutX="1205.0" layoutY="429.0" prefHeight="611.0" prefWidth="484.0" style="-fx-background-color: Black;">
+         <children>
+            <HBox alignment="CENTER" prefHeight="64.0" prefWidth="484.0" style="-fx-background-color: #03A9F4;">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Confirmation" textAlignment="CENTER">
+                     <font>
+                        <Font name="Arial Bold" size="36.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+            <Text fill="#fcfcfc" layoutX="32.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price" wrappingWidth="112.84277343749994">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text fill="#f8f6f6" layoutX="32.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ferry number" wrappingWidth="112.84277343749994">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text fx:id="pricetext" fill="#fffefe" layoutX="219.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="192.13671875">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text fx:id="ferrynumber" fill="#fffefe" layoutX="219.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="192.13671875">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text fill="#f8f6f6" layoutX="32.0" layoutY="312.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Load Time" wrappingWidth="112.84277343749994">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
          </children>
       </AnchorPane>
    </children>

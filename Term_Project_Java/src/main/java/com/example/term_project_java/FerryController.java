@@ -8,11 +8,16 @@ import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.VBox;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 public class FerryController {
     @FXML
     private AnchorPane ferrybox;
+    @FXML
+    private Text pricetext;
+    @FXML
+    private AnchorPane confirm;
     @FXML
     private ChoiceBox<String> deptime=new ChoiceBox<>();
     @FXML
@@ -82,23 +87,12 @@ public class FerryController {
     }
     public void ButtonCLick()
     {
-        if(stops.getText()!=null && persontext.getText()!=null) {
-            money();
-        }
+        money();
         Ferryfinalcontroller.ferry=F;
-        try {
+        confirm.setVisible(true);
+        pricetext.setText(F.price + "");
 
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Ferry-final.fxml"));
-            Scene scene = new Scene(fxmlLoader.load(), 320, 200);
-            Stage stage=new Stage();
-            stage.setScene(scene);
-            stage.setFullScreen(true);
-            stage.show();
-        }
-        catch (Exception e)
-        {
 
-        }
     }
 
 
